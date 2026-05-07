@@ -1,47 +1,54 @@
 <%- include('../partials/header') %>
 
-<h2 class="fw-bold mb-4"><i class="bi bi-speedometer2 me-2 text-primary"></i>Admin Dashboard</h2>
+<div class="admin-dashboard mx-auto">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold mb-2">
+      <i class="bi bi-speedometer2 me-2 text-primary"></i>Admin Dashboard
+    </h2>
+    <p class="text-muted mb-0">Manage users, clients, projects, tasks, and reports.</p>
+  </div>
 
-<div class="row g-4">
-  <div class="col-sm-6 col-lg-3">
-    <a href="/admin/users" class="text-decoration-none">
-      <div class="card border-0 shadow-sm h-100 text-center p-3">
-        <i class="bi bi-people text-primary" style="font-size:2.5rem"></i>
-        <h5 class="mt-2 mb-0">Users</h5>
-      </div>
-    </a>
-  </div>
-  <div class="col-sm-6 col-lg-3">
-    <a href="/admin/clients" class="text-decoration-none">
-      <div class="card border-0 shadow-sm h-100 text-center p-3">
-        <i class="bi bi-building text-success" style="font-size:2.5rem"></i>
-        <h5 class="mt-2 mb-0">Clients</h5>
-      </div>
-    </a>
-  </div>
-  <div class="col-sm-6 col-lg-3">
-    <a href="/admin/projects" class="text-decoration-none">
-      <div class="card border-0 shadow-sm h-100 text-center p-3">
-        <i class="bi bi-kanban text-warning" style="font-size:2.5rem"></i>
-        <h5 class="mt-2 mb-0">Projects</h5>
-      </div>
-    </a>
-  </div>
-  <div class="col-sm-6 col-lg-3">
-    <a href="/admin/tasks" class="text-decoration-none">
-      <div class="card border-0 shadow-sm h-100 text-center p-3">
-        <i class="bi bi-check2-square text-info" style="font-size:2.5rem"></i>
-        <h5 class="mt-2 mb-0">Tasks</h5>
-      </div>
-    </a>
-  </div>
-  <div class="col-sm-6 col-lg-3">
-    <a href="/admin/reports" class="text-decoration-none">
-      <div class="card border-0 shadow-sm h-100 text-center p-3">
-        <i class="bi bi-bar-chart text-danger" style="font-size:2.5rem"></i>
-        <h5 class="mt-2 mb-0">Reports</h5>
-      </div>
-    </a>
+  <div class="row g-4 justify-content-center">
+    <div class="col-sm-6 col-lg-4">
+      <a href="/admin/users" class="admin-dashboard-card text-decoration-none">
+        <span class="admin-dashboard-icon text-primary">
+          <i class="bi bi-people"></i>
+        </span>
+        <span class="fw-semibold text-dark">Users</span>
+      </a>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <a href="/admin/clients" class="admin-dashboard-card text-decoration-none">
+        <span class="admin-dashboard-icon text-success">
+          <i class="bi bi-building"></i>
+        </span>
+        <span class="fw-semibold text-dark">Clients</span>
+      </a>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <a href="/admin/projects" class="admin-dashboard-card text-decoration-none">
+        <span class="admin-dashboard-icon text-warning">
+          <i class="bi bi-kanban"></i>
+        </span>
+        <span class="fw-semibold text-dark">Projects</span>
+      </a>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <a href="/admin/tasks" class="admin-dashboard-card text-decoration-none">
+        <span class="admin-dashboard-icon text-info">
+          <i class="bi bi-check2-square"></i>
+        </span>
+        <span class="fw-semibold text-dark">Tasks</span>
+      </a>
+    </div>
+    <div class="col-sm-6 col-lg-4">
+      <a href="/admin/reports" class="admin-dashboard-card text-decoration-none">
+        <span class="admin-dashboard-icon text-danger">
+          <i class="bi bi-bar-chart"></i>
+        </span>
+        <span class="fw-semibold text-dark">Reports</span>
+      </a>
+    </div>
   </div>
 </div>
 
